@@ -8,18 +8,11 @@ function Card(props) {
     const [modal,setModal]=useState(false)
     const [area,setArea]=useState(false)
     const [text,setText]=useState(props.company.catchPhrase)
-    function openModal(){
-        setModal(true)
-    }
-    function closeModal(){
-        setModal(!modal)
-    }
-    function openArea(){
-        setArea(true)
-    }
-    function closeArea(){
-        setArea(!area)
-    }
+    const openModal=()=>setModal(true)
+    const closeModal=()=>setModal(!modal)
+    const openArea=()=>setArea(true)
+    const closeArea=()=>setArea(!area)
+    
     
   return (
     <div className='card'>
