@@ -1,0 +1,10 @@
+.card{
+    display: flex;
+    margin: 20px 0;
+}
+.card div:first-child{
+    min-width: 400px;
+}
+button{
+    margin: 0 10px;
+}
